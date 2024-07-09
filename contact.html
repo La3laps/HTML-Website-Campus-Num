@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Favicon.png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container-flex">
+        <h1>
+          <em><span class="head-title">Contactez-moi !</span></em>
+        </h1>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="hobby.html">Hobby</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <img class="profile-img" alt="profile" src="user.jpg" />
+      </div>
+    </div>
+    <div class="background"></div>
+    <div class="page-content">
+      <div class="container">
+        <p>
+          Contactez moi à cet email :
+          <a href="mailto:remi.legrand@le-campus-numerique.fr"
+            ><img class="icon" alt="icon-email" src="email_icon.png"
+          /></a>
+        </p>
+      </div>
+
+      <p class="helvetica">Ou bien remplissez ce formulaire :</p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <input
+            name="nom"
+            class="text-area"
+            type="text"
+            placeholder="Nom/Prénom"
+            required="required"
+          />
+          <div class="radio">
+            <input
+              id="entreprise"
+              type="radio"
+              name="expéditeur"
+              value="entreprise"
+            />
+            <label for="entreprise">Entreprise</label>
+
+            <input
+              id="particulier"
+              type="radio"
+              name="expéditeur"
+              value="particulier"
+            />
+            <label for="particulier">Particulier</label>
+          </div>
+
+          <select name="type_message">
+            <option value="">--Veuillez choisir une option--</option>
+            <option value="message_professionel">message professionnel</option>
+            <option value="message_personnel">message personnel</option>
+            <option value="message_administratif">message administratif</option>
+            <option value="message_informatif">message informatif</option>
+          </select>
+
+          <textarea
+            name="message"
+            class="text-area"
+            rows="5"
+            placeholder="Zone de texte"
+            required="required"
+          ></textarea>
+          <br />
+          <input class="submit" type="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
